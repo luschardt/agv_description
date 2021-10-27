@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<robot name="agv" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Silver" />
+<xacro:property name="kinect_color" value="Gazebo/Black" />
+<xacro:property name="lidar_color" value="Gazebo/Black" />
+<xacro:property name="wheel_color" value="Gazebo/FlatBlack" />
+
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="lidar">
+  <material>${lidar_color}</material>
+</gazebo>
+
+<gazebo reference="kinect">
+  <material>${kinect_color}</material>
+</gazebo>
+
+<gazebo reference="left_wheel">
+  <material>${wheel_color}</material>
+</gazebo>
+
+<gazebo reference="right_wheel">
+  <material>${wheel_color}</material>
+</gazebo>
+
+</robot>
